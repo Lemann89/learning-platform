@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="085b6baa-f0dd-4eae-ab0c-83b758118065" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../english parser/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hype-blog/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hype-blog/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hype-blog/client/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hype-blog/client/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hype-blog/client/next-env.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hype-blog/client/next.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hype-blog/client/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hype-blog/client/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hype-blog/client/pages/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hype-blog/client/styles/main.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hype-blog/client/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hype-blog/client/utils/className/classNames.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hype-blog/client/utils/className/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hype-blog/config/default.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hype-blog/controllers/auth.controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hype-blog/controllers/post.controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hype-blog/controllers/user.controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hype-blog/eslint.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hype-blog/models/post.model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hype-blog/models/user.model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hype-blog/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hype-blog/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../images/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-builder/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/../web-builder/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-builder/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../web-builder/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-builder/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../web-builder/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-builder/src/app/app.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-builder/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../web-builder/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-builder/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-builder/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../web-builder/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-builder/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../web-builder/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-builder/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../web-builder/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-builder/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../web-builder/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-builder/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-builder/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/../web-builder/tslint.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1tf6JMSSySjBafv7Odfu5cK3tTP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="085b6baa-f0dd-4eae-ab0c-83b758118065" name="Default Changelist" comment="" />
+      <created>1623147723811</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1623147723811</updated>
+      <workItem from="1623147725094" duration="302000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
