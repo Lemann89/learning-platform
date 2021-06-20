@@ -2,20 +2,63 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="085b6baa-f0dd-4eae-ab0c-83b758118065" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/styles/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/logout.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Courses.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Create.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Explore.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Progress.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/course/create/CourseCreateForm.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/course/create/CourseCreatePage.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/icons/IconChart.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/icons/IconEdit.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/icons/IconHide.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/icons/IconLogo.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/icons/IconLogout.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/icons/IconSearch.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/icons/IconSidebar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layout/Header.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layout/Layout.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layout/Sidebar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/profile/Profile.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/profile/ProfileLink.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/shared/AppIcon.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/shared/AppInput.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/shared/AppMenuItem.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/router/routes.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HelloWorld.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HelloWorld.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1tf6JMSSySjBafv7Odfu5cK3tTP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -27,7 +70,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../optonet-client" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../learning-platform-backend" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -35,9 +78,19 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="D:\Pet Projects\learning-platform\node_modules\prettier" />
     <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
     <property name="ts.external.directory.path" value="D:\Pet Projects\learning-platform\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Pet Projects\learning-platform\src\components\shared" />
+      <recent name="D:\Pet Projects\learning-platform\src\components\profile" />
+      <recent name="D:\Pet Projects\learning-platform\src\components\icons\base" />
+      <recent name="D:\Pet Projects\learning-platform\src\assets\icons" />
+      <recent name="D:\Pet Projects\learning-platform\public\styles" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -68,8 +121,30 @@
       <workItem from="1623150078702" duration="20000" />
       <workItem from="1623150101017" duration="1653000" />
       <workItem from="1623166236315" duration="20000" />
-      <workItem from="1623497164307" duration="165000" />
+      <workItem from="1623497164307" duration="4128000" />
+      <workItem from="1623509381260" duration="3016000" />
+      <workItem from="1623522227133" duration="647000" />
+      <workItem from="1623938513289" duration="1335000" />
+      <workItem from="1623949618639" duration="31000" />
+      <workItem from="1624034469887" duration="12747000" />
+      <workItem from="1624095853052" duration="15331000" />
+      <workItem from="1624182793957" duration="1653000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: add eslint">
+      <created>1623497372615</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1623497372615</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: add eslint">
+      <created>1623497400653</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1623497400653</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
