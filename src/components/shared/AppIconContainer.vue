@@ -4,9 +4,9 @@
     :width="width"
     :height="height"
     :viewBox="viewBox"
-    :aria-labelledby="iconName"
+    :aria-labelledby="name"
     role="presentation"
-    :fill="iconColor"
+    :fill="color"
   >
     <slot />
   </svg>
@@ -14,9 +14,9 @@
 
 <script>
 export default {
-  name: "AppIcon",
+  name: "AppIconContainer",
   props: {
-    iconName: {
+    name: {
       type: String,
       default: "box",
     },
@@ -28,7 +28,7 @@ export default {
       type: [Number, String],
       default: 24,
     },
-    iconColor: {
+    color: {
       type: String,
       default: "none",
     },

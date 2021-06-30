@@ -10,9 +10,9 @@
       <router-link
         v-for="navigationItem in navigationItems"
         :to="navigationItem.route"
-        :key="navigationItem.iconName"
+        :key="navigationItem.menuItem.text"
       >
-        <AppMenuItem :item="navigationItem" />
+        <AppMenuItem :item="navigationItem.menuItem" />
       </router-link>
       <AppMenuItem :item="hideMenuItem" />
     </div>
@@ -37,46 +37,54 @@ export default {
     navigationItems() {
       return [
         {
-          text: "Explore",
-          iconName: "search",
-          iconComponent: IconSearch,
-          iconHeight: 24,
-          iconWidth: 24,
+          menuItem: {
+            text: "Explore",
+            icon: {
+              name: "search",
+              component: IconSearch,
+            },
+          },
           route: "/explore",
         },
         {
-          text: "Courses",
-          iconName: "sidebar",
-          iconComponent: IconSidebar,
-          iconHeight: 24,
-          iconWidth: 24,
+          menuItem: {
+            text: "Courses",
+            icon: {
+              name: "sidebar",
+              component: IconSidebar,
+            },
+          },
           route: "/courses",
         },
         {
-          text: "Progress",
-          iconName: "chart",
-          iconComponent: IconChart,
-          iconHeight: 24,
-          iconWidth: 24,
+          menuItem: {
+            text: "Progress",
+            icon: {
+              name: "chart",
+              component: IconChart,
+            },
+          },
           route: "/progress",
         },
         {
-          text: "Create",
-          iconName: "edit",
-          iconComponent: IconEdit,
-          iconHeight: 24,
-          iconWidth: 24,
-          route: "/create",
+          menuItem: {
+            text: "Create",
+            icon: {
+              name: "edit",
+              component: IconEdit,
+            },
+          },
+          route: "/course",
         },
       ];
     },
     hideMenuItem() {
       return {
         text: "Hide",
-        iconName: "hide",
-        iconComponent: IconHide,
-        iconHeight: 24,
-        iconWidth: 24,
+        icon: {
+          name: "hide",
+          component: IconHide,
+        },
       };
     },
   },
@@ -102,7 +110,7 @@ export default {
     margin-bottom: 36px;
   }
 
-  & > .menuItem {
+  & > .menu-item {
     &:last-child {
       margin-bottom: 36px;
       margin-top: auto;

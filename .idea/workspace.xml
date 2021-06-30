@@ -2,39 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="085b6baa-f0dd-4eae-ab0c-83b758118065" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/styles/reset.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/left.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/logout.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Courses.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Create.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Explore.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Progress.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/course/create/CourseCreateForm.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/course/create/CourseCreatePage.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/icons/IconChart.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/icons/IconEdit.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/icons/IconHide.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/icons/IconLogo.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/icons/IconLogout.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/icons/IconSearch.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/icons/IconSidebar.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/layout/Header.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/layout/Layout.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/layout/Sidebar.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/profile/Profile.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/profile/ProfileLink.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/shared/AppIcon.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/shared/AppInput.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/shared/AppMenuItem.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/router/routes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.graphqlconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/course/create/CreateCourse.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/course/create/CreateModules.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/course/create/CreateModulesSidebar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/course/create/LessonEditor.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/course/create/ModuleDropdown.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/course/create/ModuleEditor.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/icons/IconAdd.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/icons/IconBack.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/icons/IconChevron.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/icons/IconMove.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/shared/AddMenuItem/AddMenuItemStyleTypes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/shared/AddMenuItem/AppAddMenuItem.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/shared/AppDropdown.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/shared/AppFormField.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/shared/Button/AppButton.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/shared/Button/AppButtonStyleTypes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gql/courses.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gql/schema.graphql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/_vars.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/styles/reset.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HelloWorld.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icons/left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icons/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icons/logout.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Courses.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/explore/Courses.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Create.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/course/create/CourseCreateForm.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/course/create/CourseCreatePage.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Header.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/Sidebar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Sidebar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/profile/Profile.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/profile/Profile.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/AppIcon.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/AppIconContainer.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/AppInput.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/AppInput.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/AppMenuItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/AppMenuItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/routes.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,6 +52,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="TypeScript File" />
         <option value="Vue Single File Component" />
       </list>
     </option>
@@ -70,7 +78,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../learning-platform-backend" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Work/hanser-demo" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -79,17 +87,17 @@
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="D:\Pet Projects\learning-platform\node_modules\prettier" />
-    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="D:\Pet Projects\learning-platform\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Pet Projects\learning-platform\src\components\shared" />
-      <recent name="D:\Pet Projects\learning-platform\src\components\profile" />
-      <recent name="D:\Pet Projects\learning-platform\src\components\icons\base" />
-      <recent name="D:\Pet Projects\learning-platform\src\assets\icons" />
-      <recent name="D:\Pet Projects\learning-platform\public\styles" />
+      <recent name="D:\Pet Projects\learning-platform\src\components\shared\AddMenuItem" />
+      <recent name="D:\Pet Projects\learning-platform\src\components\explore" />
+      <recent name="D:\Pet Projects\learning-platform\src\components\course\create" />
+      <recent name="D:\Pet Projects\learning-platform\src\styles" />
+      <recent name="D:\Pet Projects\learning-platform\src\components\shared\Button" />
     </key>
   </component>
   <component name="RunManager">
@@ -128,7 +136,17 @@
       <workItem from="1623949618639" duration="31000" />
       <workItem from="1624034469887" duration="12747000" />
       <workItem from="1624095853052" duration="15331000" />
-      <workItem from="1624182793957" duration="1653000" />
+      <workItem from="1624182793957" duration="7436000" />
+      <workItem from="1624198749351" duration="11616000" />
+      <workItem from="1624269195762" duration="20928000" />
+      <workItem from="1624341259192" duration="2294000" />
+      <workItem from="1624442672631" duration="174000" />
+      <workItem from="1624638694019" duration="446000" />
+      <workItem from="1624705295483" duration="1937000" />
+      <workItem from="1624709161590" duration="18227000" />
+      <workItem from="1624786733098" duration="2100000" />
+      <workItem from="1624876840632" duration="5218000" />
+      <workItem from="1624957451285" duration="3000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add eslint">
       <created>1623497372615</created>
@@ -144,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623497400653</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="code code and code">
+      <created>1624187369492</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1624187369492</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,7 +189,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: add eslint" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add eslint" />
+    <MESSAGE value="code code and code" />
+    <option name="LAST_COMMIT_MESSAGE" value="code code and code" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

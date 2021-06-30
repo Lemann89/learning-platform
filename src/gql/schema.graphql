@@ -1,0 +1,101 @@
+# This file was generated based on ".graphqlconfig". Do not edit manually.
+
+schema {
+    query: Query
+    mutation: Mutation
+}
+
+type CourseCategoryEntity {
+    id: Int!
+    name: String!
+}
+
+type CourseEntity {
+    courseCategory: CourseCategoryEntity!
+    description: String!
+    id: Int!
+    modules: [ModuleEntity!]!
+    name: String!
+}
+
+type DeleteResult {
+    affected: Int!
+}
+
+type LessonEntity {
+    content: String!
+    id: Int!
+    module: ModuleEntity!
+    name: String!
+    order: Int
+}
+
+type ModuleEntity {
+    course: CourseEntity!
+    description: String!
+    id: Int!
+    lessons: [LessonEntity!]!
+    name: String!
+    order: Int
+}
+
+type Mutation {
+    createCourse(course: CreateCourseInput!): CourseEntity!
+    createLesson(lesson: CreateLessonInput!): LessonEntity!
+    createModule(module: CreateModuleInput!): ModuleEntity!
+    deleteCourse(id: Int!): DeleteResult!
+    deleteLesson(id: Int!): DeleteResult!
+    deleteModule(id: Int!): DeleteResult!
+    updateCourse(course: UpdateCourseInput!): CourseEntity!
+    updateLesson(lesson: UpdateLessonInput!): LessonEntity!
+    updateModule(module: UpdateModuleInput!): ModuleEntity!
+}
+
+type Query {
+    course(id: Int!): CourseEntity!
+    courses: [CourseEntity!]!
+    lesson(id: Int!): LessonEntity!
+    lessons: [LessonEntity!]!
+    module(id: Int!): ModuleEntity!
+    modules: [ModuleEntity!]!
+}
+
+input CreateCourseInput {
+    courseCategoryId: Int
+    description: String!
+    name: String!
+}
+
+input CreateLessonInput {
+    content: String!
+    moduleId: Int!
+    name: String!
+    order: Int
+}
+
+input CreateModuleInput {
+    courseId: Int!
+    description: String!
+    name: String!
+    order: Int
+}
+
+input UpdateCourseInput {
+    description: String!
+    id: Int!
+    name: String!
+}
+
+input UpdateLessonInput {
+    content: String!
+    id: Int!
+    name: String!
+    order: Int
+}
+
+input UpdateModuleInput {
+    description: String!
+    id: Int!
+    name: String!
+    order: Int
+}

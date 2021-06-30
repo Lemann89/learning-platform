@@ -21,18 +21,20 @@ export default {
     menuItems() {
       return [
         {
-          text: "Logo",
-          iconName: "logo",
-          iconComponent: IconLogo,
-          iconHeight: 30,
-          iconWidth: 38,
+          text: "Learnio",
+          icon: {
+            name: "logo",
+            component: IconLogo,
+            height: 30,
+            width: 38,
+          },
         },
         {
           text: "Log out",
-          iconName: "logout",
-          iconComponent: IconLogout,
-          iconHeight: 24,
-          iconWidth: 24,
+          icon: {
+            name: "logout",
+            component: IconLogout,
+          },
         },
       ];
     },
@@ -46,6 +48,8 @@ export default {
   width: 100%;
   background-color: #ffffff;
   box-shadow: 8px 0 8px rgba(191, 191, 224, 0.25);
+  position: relative;
+  z-index: 0;
 }
 
 .nav {
@@ -53,7 +57,7 @@ export default {
   display: flex;
   align-items: center;
 
-  .menuItem:last-child {
+  .menu-item:last-child {
     margin-left: auto;
   }
 }

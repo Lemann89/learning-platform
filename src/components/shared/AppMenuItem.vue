@@ -1,24 +1,25 @@
 <template>
-  <div class="menuItem">
-    <div class="menuItemIcon">
-      <AppIcon
-        :icon-name="item.iconName"
-        :height="item.iconHeight"
-        :width="item.iconWidth"
+  <div class="menu-item">
+    <div class="menu-item__icon">
+      <AppIconContainer
+        :icon-name="item.icon.name"
+        :height="item.icon.height"
+        :width="item.icon.width"
       >
-        <component :is="item.iconComponent" />
-      </AppIcon>
+        <component :is="item.icon.component" />
+      </AppIconContainer>
     </div>
-    <span class="menuItemText">{{ item.text }}</span>
+    <span class="menu-item__text">{{ item.text }}</span>
   </div>
 </template>
 
-<script>
-import AppIcon from "./AppIcon";
+<script lang="ts">
+import AppIconContainer from "./AppIconContainer.vue";
+
 export default {
   name: "AppMenuItem",
   components: {
-    AppIcon,
+    AppIconContainer,
   },
   props: {
     item: {
@@ -29,20 +30,20 @@ export default {
 };
 </script>
 
-<style scoped>
-.menuItem {
+<style scoped lang="scss">
+.menu-item {
   display: flex;
   align-items: center;
   cursor: pointer;
-}
 
-.menuItemText {
-  margin-left: 16px;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 24px;
-  letter-spacing: 0.2px;
-  margin-bottom: 2px;
-  color: #25282b;
+  &__text {
+    margin-left: 16px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    margin-bottom: 2px;
+    color: #25282b;
+  }
 }
 </style>

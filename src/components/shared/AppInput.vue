@@ -1,7 +1,13 @@
 <template>
-  <div class="inputGroup">
-    <input type="text" :value="value" required />
-    <span class="bar"></span>
+  <div class="input__group">
+    <input
+      name="name"
+      autocomplete="off"
+      :type="type"
+      :value="modelValue"
+      :placeholder="label"
+      @input="onInput"
+    />
     <label>{{ label }}</label>
   </div>
 </template>
@@ -14,51 +20,75 @@ export default {
       type: String,
       required: true,
     },
-    value: {
+    type: {
       type: String,
-      required: true,
+      default: "text",
+    },
+    modelValue: {
+      type: String,
+    },
+    name: {
+      type: String,
+    },
+  },
+  methods: {
+    onInput(evt) {
+      this.$emit("update:modelValue", evt.target.value);
     },
   },
 };
 </script>
 
 <style scoped lang="scss">
-.inputGroup {
+.input__group {
   position: relative;
-  margin-bottom: 30px;
 }
 
 input {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #e0e0e0;
+  outline: 0;
   font-size: 16px;
-  padding: 10px;
-  display: block;
-  width: 300px;
-  border: none;
-  border-bottom: 1px solid #ccc;
+  color: $textColor;
+  padding: 5px 2px;
+  background: transparent;
+  transition: border-color 0.2s;
 
   &:focus {
     outline: none;
   }
-}
 
-label {
-  color: #999;
-  font-size: 18px;
-  position: absolute;
-  pointer-events: none;
-  left: 10px;
-  top: 15px;
-  transition: 0.2s ease all;
-  -moz-transition: 0.2s ease all;
-  -webkit-transition: 0.2s ease all;
-}
-
-input {
-  &:focus ~ label,
-  &:valid ~ label {
-    top: -15px;
-    font-size: 14px;
-    color: #5264ae;
+  &::placeholder {
+    color: transparent;
   }
+
+  &:placeholder-shown ~ label {
+    font-size: 16px;
+    cursor: text;
+    top: 5px;
+    left: 2px;
+    pointer-events: none;
+  }
+}
+
+label,
+input:focus ~ label {
+  position: absolute;
+  top: -12px;
+  left: 2px;
+  display: block;
+  transition: 0.2s;
+  font-size: 12px;
+  color: #a0a4a8;
+}
+
+input:focus ~ label {
+  color: $primary;
+}
+
+input:focus {
+  border-bottom: 2px solid $primary;
 }
 </style>
