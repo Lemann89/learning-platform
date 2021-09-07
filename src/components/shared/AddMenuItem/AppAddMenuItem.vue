@@ -1,12 +1,18 @@
 <template>
-  <div class="add" :class="styleType">
+<button
+    class="add"
+    :class="styleType"
+>
     <div class="add__icon">
-      <AppIconContainer width="19" height="19">
-        <IconAdd />
-      </AppIconContainer>
+        <AppIconContainer
+            width="19"
+            height="19"
+        >
+            <IconAdd />
+        </AppIconContainer>
     </div>
     <span class="add__text"> {{ text }} </span>
-  </div>
+</button>
 </template>
 
 <script>
@@ -14,12 +20,12 @@ import IconAdd from "../../icons/IconAdd";
 import AppIconContainer from "../AppIconContainer";
 
 export default {
-  name: "AppAddMenuItem",
-  components: { IconAdd, AppIconContainer },
-  props: {
-    styleType: String,
-    text: String,
-  },
+    name: "AppAddMenuItem",
+    components: { IconAdd, AppIconContainer },
+    props: {
+        styleType: String,
+        text: String,
+    },
 };
 </script>
 
@@ -28,6 +34,8 @@ export default {
   cursor: pointer;
   display: flex;
   align-items: center;
+  background: transparent;
+  border: none;
 
   &__text {
     font-weight: 400;

@@ -1,31 +1,39 @@
 <template>
-  <div
+<div
     class="dropdown"
     :class="{
-      expanded: isExpanded,
+        expanded: isExpanded,
     }"
-  >
+>
     <div class="dropdown__head">
-      <span>{{ title }}</span>
-      <div
-        class="dropdown__chevron"
-        @click="toggle()"
+        <span @click="onTitleClick()">{{ title }}</span>
+        <div
+            class="dropdown__chevron"
+            @click="toggle()"
+            @click.prevent="redirect"
+        >
+            <AppIconContainer
+                width="20"
+                height="20"
+            >
+                <IconChevron />
+            </AppIconContainer>
+        </div>
+    </div>
+    <div
+        v-if="isExpanded"
+        class="dropdown__body"
         @click.prevent="redirect"
-      >
-        <AppIconContainer width="20" height="20">
-          <IconChevron />
-        </AppIconContainer>
-      </div>
+    >
+        <slot />
     </div>
-    <div class="dropdown__body" v-if="isExpanded" @click.prevent="redirect">
-      <slot />
-    </div>
-  </div>
+</div>
 </template>
 
 <script>
 import AppIconContainer from "./AppIconContainer";
 import IconChevron from "../icons/IconChevron";
+
 export default {
   name: "AppDropdown",
   components: { IconChevron, AppIconContainer },
@@ -34,6 +42,9 @@ export default {
       type: String,
       required: true,
     },
+  },
+  emits: {
+    titleClick: null
   },
   data() {
     return {
@@ -44,6 +55,9 @@ export default {
     toggle() {
       this.isExpanded = !this.isExpanded;
     },
+    onTitleClick(evt) {
+      this.$emit('titleClick', { evt })
+    }
   },
 };
 </script>
@@ -57,6 +71,7 @@ export default {
     position: relative;
 
     span {
+      width: 100%;
       font-weight: 500;
       font-size: 16px;
       line-height: 24px;
@@ -72,7 +87,7 @@ export default {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    position: absolute;
+    position: relative;
     right: 0;
     cursor: pointer;
 

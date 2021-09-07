@@ -1,10 +1,10 @@
 <template>
-  <p>progress</p>
+<p>progress</p>
 </template>
 
 <script>
 export default {
-  name: "Progress",
+    name: "Progress",
 };
 </script>
 

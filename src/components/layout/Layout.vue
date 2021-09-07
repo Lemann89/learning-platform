@@ -1,21 +1,23 @@
 <template>
-  <div class="layout">
+<div class="layout">
     <div class="sidebar">
-      <Sidebar />
+        <Sidebar />
     </div>
-    <div class="content">
-      <Header />
-      <router-view />
+    <div class="main">
+        <Header />
+        <div class="content">
+            <router-view />
+        </div>
     </div>
-  </div>
+</div>
 </template>
 
 <script>
 import Sidebar from "./Sidebar";
 import Header from "./Header";
 export default {
-  name: "Layout",
-  components: { Header, Sidebar },
+    name: "Layout",
+    components: { Header, Sidebar },
 };
 </script>
 
@@ -26,12 +28,17 @@ export default {
   height: 100vh;
 }
 
-.content {
+.main {
   flex: 1;
 }
 
 .sidebar {
   box-shadow: 0 0 8px rgb(191 191 224 / 25%);
   z-index: 1;
+}
+
+.content {
+  overflow: auto;
+  height: calc(100% - 80px);
 }
 </style>

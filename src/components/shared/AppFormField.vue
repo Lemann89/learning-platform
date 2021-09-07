@@ -1,26 +1,35 @@
 <template>
-  <div class="form__field">
-    <AppInput
-      :label="label"
-      :name="name"
-      :type="type"
-      :model-value="modelValue"
-      @input="onInput"
-    />
+<div class="form__field">
+    <div class="input__group">
+        <Field
+            :name="name"
+            :type="type"
+            :placeholder="label"
+            :value="value"
+            as="input"
+        />
+        <label>{{ label }}</label>
+    </div>
     <span class="form__error">
-      {{ error }}
+        {{ error }}
     </span>
-  </div>
+</div>
 </template>
 
 <script>
-import AppInput from "./AppInput";
+
+import { Field } from "vee-validate";
 
 export default {
   name: "AppFormField",
-  components: { AppInput },
+  components: {
+    Field,
+  },
   props: {
-    error: String,
+    error: {
+      type: String,
+      required: true,
+    },
     label: {
       type: String,
       required: true,
@@ -29,16 +38,69 @@ export default {
       type: String,
       required: true,
     },
-    modelValue: String,
-    type: String,
-  },
-  methods: {
-    onInput(evt) {
-      this.$emit("update:modelValue", evt.target.value);
-      console.log(this.modelValue);
+    value: {
+      type: String,
+      required: false,
     },
+    type: {
+      type: String,
+      required: false,
+      default: "text",
+    }
   },
 };
 </script>
 
-<style scoped></style>
+<style scoped lang="scss">
+.input__group {
+  position: relative;
+}
+
+input {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #e0e0e0;
+  outline: 0;
+  font-size: 16px;
+  color: $textColor;
+  padding: 5px 2px;
+  background: transparent;
+  transition: border-color 0.2s;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown ~ label {
+    font-size: 16px;
+    cursor: text;
+    top: 5px;
+    left: 2px;
+    pointer-events: none;
+  }
+}
+
+label,
+input:focus ~ label {
+  position: absolute;
+  top: -12px;
+  left: 2px;
+  display: block;
+  transition: 0.2s;
+  font-size: 12px;
+  color: #a0a4a8;
+}
+
+input:focus ~ label {
+  color: $primary;
+}
+
+input:focus {
+  border-bottom: 2px solid $primary;
+}
+</style>

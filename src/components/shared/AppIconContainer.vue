@@ -1,5 +1,5 @@
 <template>
-  <svg
+<svg
     xmlns="http://www.w3.org/2000/svg"
     :width="width"
     :height="height"
@@ -7,37 +7,37 @@
     :aria-labelledby="name"
     role="presentation"
     :fill="color"
-  >
+>
     <slot />
-  </svg>
+</svg>
 </template>
 
 <script>
 export default {
-  name: "AppIconContainer",
-  props: {
-    name: {
-      type: String,
-      default: "box",
+    name: "AppIconContainer",
+    props: {
+        name: {
+            type: String,
+            default: "box",
+        },
+        width: {
+            type: [Number, String],
+            default: 24,
+        },
+        height: {
+            type: [Number, String],
+            default: 24,
+        },
+        color: {
+            type: String,
+            default: "none",
+        },
     },
-    width: {
-      type: [Number, String],
-      default: 24,
+    computed: {
+        viewBox() {
+          return `0 0 ${this.width} ${this.height}`;
+        },
     },
-    height: {
-      type: [Number, String],
-      default: 24,
-    },
-    color: {
-      type: String,
-      default: "none",
-    },
-  },
-  computed: {
-    viewBox() {
-      return `0 0 ${this.width} ${this.height}`;
-    },
-  },
 };
 </script>
 

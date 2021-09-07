@@ -1,5 +1,5 @@
 <template>
-  <Layout></Layout>
+<Layout />
 </template>
 
 <script lang="ts">
@@ -10,18 +10,18 @@ import { DefaultApolloClient } from "@vue/apollo-composable";
 import { provide } from "vue";
 
 const apolloClient = new ApolloClient({
-  uri: `http://localhost:2002/graphql`,
-  cache: new InMemoryCache(),
+    uri: `http://localhost:2002/graphql`,
+    cache: new InMemoryCache(),
 });
 
 export default defineComponent({
-  name: "App",
-  components: {
-    Layout,
-  },
-  setup() {
-    provide(DefaultApolloClient, apolloClient);
-  },
+    name: "App",
+    components: {
+        Layout,
+    },
+    setup() {
+      provide(DefaultApolloClient, apolloClient);
+    },
 });
 </script>
 
@@ -178,5 +178,10 @@ a:active {
     bottom: -18px;
     left: 2px;
   }
+}
+
+.explore__container {
+  margin: 0 auto;
+  max-width: 1085px;
 }
 </style>

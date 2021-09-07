@@ -1,32 +1,32 @@
 <template>
-  <div class="menu-item">
+<div class="menu-item">
     <div class="menu-item__icon">
-      <AppIconContainer
-        :icon-name="item.icon.name"
-        :height="item.icon.height"
-        :width="item.icon.width"
-      >
-        <component :is="item.icon.component" />
-      </AppIconContainer>
+        <AppIconContainer
+            :icon-name="item.icon.name"
+            :height="item.icon.height"
+            :width="item.icon.width"
+        >
+            <component :is="item.icon.component" />
+        </AppIconContainer>
     </div>
     <span class="menu-item__text">{{ item.text }}</span>
-  </div>
+</div>
 </template>
 
 <script lang="ts">
 import AppIconContainer from "./AppIconContainer.vue";
 
 export default {
-  name: "AppMenuItem",
-  components: {
-    AppIconContainer,
-  },
-  props: {
-    item: {
-      type: Object,
-      required: true,
+    name: "AppMenuItem",
+    components: {
+        AppIconContainer,
     },
-  },
+    props: {
+        item: {
+            type: Object,
+            required: true,
+        },
+    },
 };
 </script>
 

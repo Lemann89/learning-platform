@@ -1,47 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="085b6baa-f0dd-4eae-ab0c-83b758118065" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.graphqlconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/course/create/CreateCourse.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/course/create/CreateModules.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/course/create/CreateModulesSidebar.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/course/create/LessonEditor.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/course/create/ModuleDropdown.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/course/create/ModuleEditor.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/icons/IconAdd.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/icons/IconBack.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/icons/IconChevron.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/icons/IconMove.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/shared/AddMenuItem/AddMenuItemStyleTypes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/shared/AddMenuItem/AppAddMenuItem.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/shared/AppDropdown.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/shared/AppFormField.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/shared/Button/AppButton.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/shared/Button/AppButtonStyleTypes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gql/courses.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gql/schema.graphql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/_vars.scss" afterDir="false" />
+    <list default="true" id="085b6baa-f0dd-4eae-ab0c-83b758118065" name="Default Changelist" comment="add apollo huita, формочки и версточка">
+      <change afterPath="$PROJECT_DIR$/.eslintignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/course/CourseCard.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/shared/AppLoader.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gql/courses/composables.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gql/courses/gql.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gql/courses/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gql/modules/composables.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gql/modules/gql.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gql/modules/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/create/CreateCourse.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/editor/Editor.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/editor/EditorSidebar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/editor/course/CourseEditor.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/editor/lesson/LessonEditor.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/editor/module/ModuleDropdown.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/editor/module/ModuleEditor.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/explore/ExploreHero.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styles/reset.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/left.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/logout.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Courses.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/explore/Courses.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Create.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/course/create/CourseCreateForm.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/course/create/CourseCreatePage.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Explore.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/explore/Explore.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Progress.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/progress/Progress.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/course/create/CreateCourse.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/course/create/CreateModules.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/course/create/CreateModulesSidebar.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/course/create/LessonEditor.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/course/create/ModuleDropdown.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/course/create/ModuleEditor.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/explore/Courses.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/courses/Courses.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/icons/IconAdd.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/icons/IconAdd.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/icons/IconBack.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/icons/IconBack.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/icons/IconChart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/icons/IconChart.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/icons/IconChevron.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/icons/IconChevron.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/icons/IconEdit.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/icons/IconEdit.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/icons/IconHide.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/icons/IconHide.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/icons/IconLogo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/icons/IconLogo.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/icons/IconLogout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/icons/IconLogout.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/icons/IconMove.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/icons/IconMove.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/icons/IconSearch.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/icons/IconSearch.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/icons/IconSidebar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/icons/IconSidebar.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/layout/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Header.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/Layout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Layout.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/layout/Sidebar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Sidebar.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/profile/Profile.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/profile/Profile.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/shared/AppIcon.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/AppIconContainer.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/profile/ProfileLink.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/profile/ProfileLink.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/AddMenuItem/AppAddMenuItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/AddMenuItem/AppAddMenuItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/AppDropdown.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/AppDropdown.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/AppFormField.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/AppFormField.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/AppIconContainer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/AppIconContainer.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/shared/AppInput.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/AppInput.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/shared/AppMenuItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/AppMenuItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/Button/AppButton.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/Button/AppButton.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gql/courses.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/router/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,6 +78,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -67,6 +87,17 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/package.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main.ts" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/pages/editor/module/ModuleDropdown.vue" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/pages/courses/Courses.vue" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/router/routes.ts" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/pages/editor/course/CourseEditor.vue" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/pages/editor/Editor.vue" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/components/shared/AppDropdown.vue" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/pages/editor/EditorSidebar.vue" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1tf6JMSSySjBafv7Odfu5cK3tTP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -78,7 +109,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Work/hanser-demo" />
+    <property name="javascript.nodejs.core.library.configured.version" value="14.17.4" />
+    <property name="javascript.nodejs.core.library.typings.version" value="14.17.4" />
+    <property name="js.last.introduce.type" value="CONST" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dream" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -88,19 +122,22 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="D:\Pet Projects\learning-platform\node_modules\prettier" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="ts.external.directory.path" value="D:\Pet Projects\learning-platform\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="D:\PetProjects\learning-platform\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Pet Projects\learning-platform\src\components\shared\AddMenuItem" />
-      <recent name="D:\Pet Projects\learning-platform\src\components\explore" />
-      <recent name="D:\Pet Projects\learning-platform\src\components\course\create" />
-      <recent name="D:\Pet Projects\learning-platform\src\styles" />
-      <recent name="D:\Pet Projects\learning-platform\src\components\shared\Button" />
+      <recent name="D:\PetProjects\learning-platform\src\pages\create" />
+      <recent name="D:\PetProjects\learning-platform\src\pages\editor" />
+      <recent name="D:\PetProjects\learning-platform\src\pages\create\module" />
+      <recent name="D:\PetProjects\learning-platform\src\pages\create\lesson" />
+      <recent name="D:\PetProjects\learning-platform\src\pages\create\course" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.dev">
+    <configuration name="scratch.es6" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$APPLICATION_CONFIG_DIR$/scratches/scratch.es6" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -113,6 +150,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.scratch.es6" />
         <item itemvalue="npm.dev" />
       </list>
     </recent_temporary>
@@ -147,6 +185,27 @@
       <workItem from="1624786733098" duration="2100000" />
       <workItem from="1624876840632" duration="5218000" />
       <workItem from="1624957451285" duration="3000" />
+      <workItem from="1625941826329" duration="2003000" />
+      <workItem from="1626008872225" duration="6015000" />
+      <workItem from="1626539007032" duration="2751000" />
+      <workItem from="1629291595910" duration="6799000" />
+      <workItem from="1629367959437" duration="10809000" />
+      <workItem from="1629401368002" duration="3321000" />
+      <workItem from="1629474355993" duration="686000" />
+      <workItem from="1629489086672" duration="2920000" />
+      <workItem from="1629545864652" duration="2659000" />
+      <workItem from="1629548557069" duration="3174000" />
+      <workItem from="1629572469371" duration="1978000" />
+      <workItem from="1629628504850" duration="2442000" />
+      <workItem from="1629641607754" duration="5666000" />
+      <workItem from="1629705827953" duration="11000" />
+      <workItem from="1630095081315" duration="5912000" />
+      <workItem from="1630102876802" duration="988000" />
+      <workItem from="1630153986888" duration="4277000" />
+      <workItem from="1630183914527" duration="16000" />
+      <workItem from="1630243345198" duration="15209000" />
+      <workItem from="1630616276698" duration="7296000" />
+      <workItem from="1630665074634" duration="14000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add eslint">
       <created>1623497372615</created>

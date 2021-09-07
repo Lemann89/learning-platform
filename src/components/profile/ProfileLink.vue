@@ -1,27 +1,30 @@
 <template>
-  <router-link to="/profile">
+<router-link to="/profile">
     <div class="userAvatar">
-      <div class="userImage">
-        <img :src="avatar" alt="person" />
-      </div>
-      <span class="userName">{{ name }}</span>
+        <div class="userImage">
+            <img
+                :src="avatar"
+                alt="person"
+            >
+        </div>
+        <span class="userName">{{ name }}</span>
     </div>
-  </router-link>
+</router-link>
 </template>
 
 <script>
 export default {
-  name: "ProfileLink",
-  props: {
-    avatar: {
-      type: String,
-      required: true,
+    name: "ProfileLink",
+    props: {
+        avatar: {
+            type: String,
+            required: true,
+        },
+        name: {
+            type: String,
+            required: true,
+        },
     },
-    name: {
-      type: String,
-      required: true,
-    },
-  },
 };
 </script>
 

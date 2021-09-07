@@ -1,13 +1,13 @@
 <template>
-  <header class="header">
+<header class="header">
     <nav class="nav">
-      <AppMenuItem
-        v-for="menuItem in menuItems"
-        :item="menuItem"
-        :key="menuItem.iconName"
-      />
+        <AppMenuItem
+            v-for="menuItem in menuItems"
+            :key="menuItem.iconName"
+            :item="menuItem"
+        />
     </nav>
-  </header>
+</header>
 </template>
 
 <script>
@@ -15,30 +15,30 @@ import AppMenuItem from "../shared/AppMenuItem";
 import IconLogo from "../icons/IconLogo";
 import IconLogout from "../icons/IconLogout";
 export default {
-  name: "Header",
-  components: { AppMenuItem },
-  computed: {
-    menuItems() {
-      return [
-        {
-          text: "Learnio",
-          icon: {
-            name: "logo",
-            component: IconLogo,
-            height: 30,
-            width: 38,
-          },
+    name: "Header",
+    components: { AppMenuItem },
+    computed: {
+        menuItems() {
+          return [
+            {
+                    text: "Coursera",
+                    icon: {
+                        name: "logo",
+                        component: IconLogo,
+                        height: 30,
+                        width: 38,
+                    },
+            },
+            {
+                    text: "Log out",
+                    icon: {
+                        name: "logout",
+                        component: IconLogout,
+                    },
+            },
+          ];
         },
-        {
-          text: "Log out",
-          icon: {
-            name: "logout",
-            component: IconLogout,
-          },
-        },
-      ];
     },
-  },
 };
 </script>
 

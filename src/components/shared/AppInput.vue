@@ -1,41 +1,41 @@
 <template>
-  <div class="input__group">
+<div class="input__group">
     <input
-      name="name"
-      autocomplete="off"
-      :type="type"
-      :value="modelValue"
-      :placeholder="label"
-      @input="onInput"
-    />
+        name="name"
+        autocomplete="off"
+        :type="type"
+        :value="modelValue"
+        :placeholder="label"
+        @input="onInput"
+    >
     <label>{{ label }}</label>
-  </div>
+</div>
 </template>
 
 <script>
 export default {
-  name: "AppInput",
-  props: {
-    label: {
-      type: String,
-      required: true,
+    name: "AppInput",
+    props: {
+        label: {
+            type: String,
+            required: true,
+        },
+        type: {
+            type: String,
+            default: "text",
+        },
+        modelValue: {
+            type: String,
+        },
+        name: {
+            type: String,
+        },
     },
-    type: {
-      type: String,
-      default: "text",
+    methods: {
+        onInput(evt) {
+          this.$emit("update:modelValue", evt.target.value);
+        },
     },
-    modelValue: {
-      type: String,
-    },
-    name: {
-      type: String,
-    },
-  },
-  methods: {
-    onInput(evt) {
-      this.$emit("update:modelValue", evt.target.value);
-    },
-  },
 };
 </script>
 

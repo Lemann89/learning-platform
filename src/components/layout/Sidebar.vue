@@ -1,22 +1,22 @@
 <template>
-  <aside class="aside">
+<aside class="aside">
     <div class="user">
-      <ProfileLink
-        avatar="https://thispersondoesnotexist.com/image"
-        name="Robert"
-      />
+        <ProfileLink
+            avatar="https://thispersondoesnotexist.com/image"
+            name="Robert"
+        />
     </div>
     <div class="menu">
-      <router-link
-        v-for="navigationItem in navigationItems"
-        :to="navigationItem.route"
-        :key="navigationItem.menuItem.text"
-      >
-        <AppMenuItem :item="navigationItem.menuItem" />
-      </router-link>
-      <AppMenuItem :item="hideMenuItem" />
+        <router-link
+            v-for="navigationItem in navigationItems"
+            :key="navigationItem.menuItem.text"
+            :to="navigationItem.route"
+        >
+            <AppMenuItem :item="navigationItem.menuItem" />
+        </router-link>
+        <AppMenuItem :item="hideMenuItem" />
     </div>
-  </aside>
+</aside>
 </template>
 
 <script>
@@ -28,66 +28,66 @@ import AppMenuItem from "../shared/AppMenuItem";
 import ProfileLink from "../profile/ProfileLink";
 import IconHide from "../icons/IconHide";
 export default {
-  name: "Sidebar",
-  components: {
-    ProfileLink,
-    AppMenuItem,
-  },
-  computed: {
-    navigationItems() {
-      return [
-        {
-          menuItem: {
-            text: "Explore",
-            icon: {
-              name: "search",
-              component: IconSearch,
-            },
-          },
-          route: "/explore",
-        },
-        {
-          menuItem: {
-            text: "Courses",
-            icon: {
-              name: "sidebar",
-              component: IconSidebar,
-            },
-          },
-          route: "/courses",
-        },
-        {
-          menuItem: {
-            text: "Progress",
-            icon: {
-              name: "chart",
-              component: IconChart,
-            },
-          },
-          route: "/progress",
-        },
-        {
-          menuItem: {
-            text: "Create",
-            icon: {
-              name: "edit",
-              component: IconEdit,
-            },
-          },
-          route: "/course",
-        },
-      ];
+    name: "Sidebar",
+    components: {
+        ProfileLink,
+        AppMenuItem,
     },
-    hideMenuItem() {
-      return {
-        text: "Hide",
-        icon: {
-          name: "hide",
-          component: IconHide,
+    computed: {
+        navigationItems() {
+          return [
+            {
+                    menuItem: {
+                        text: "Explore",
+                        icon: {
+                            name: "search",
+                            component: IconSearch,
+                        },
+                    },
+                    route: "/explore",
+            },
+            {
+                    menuItem: {
+                        text: "Courses",
+                        icon: {
+                            name: "sidebar",
+                            component: IconSidebar,
+                        },
+                    },
+                    route: "/courses",
+            },
+            {
+                    menuItem: {
+                        text: "Progress",
+                        icon: {
+                            name: "chart",
+                            component: IconChart,
+                        },
+                    },
+                    route: "/progress",
+            },
+            {
+                    menuItem: {
+                        text: "Create",
+                        icon: {
+                            name: "edit",
+                            component: IconEdit,
+                        },
+                    },
+                    route: "/course",
+            },
+          ];
         },
-      };
+        hideMenuItem() {
+          return {
+                text: "Hide",
+                icon: {
+                    name: "hide",
+                    component: IconHide,
+                },
+          };
+        },
     },
-  },
 };
 </script>
 

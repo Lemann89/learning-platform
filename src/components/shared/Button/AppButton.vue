@@ -1,29 +1,33 @@
 <template>
-  <button :type="type" :class="styleType" @click="click">
+<button
+    :type="type"
+    :class="styleType"
+    @click="click"
+>
     <span>
-      <slot />
+        <slot />
     </span>
-  </button>
+</button>
 </template>
 
 <script>
 import { AppButtonStyleTypes } from "./AppButtonStyleTypes";
 
 export default {
-  name: "AppButton",
-  props: {
-    type: {
-      type: String,
-      default: "button",
+    name: "AppButton",
+    props: {
+        type: {
+            type: String,
+            default: "button",
+        },
+        styleType: {
+            type: String,
+            default: AppButtonStyleTypes.Primary,
+        },
+        click: {
+            type: Function,
+        },
     },
-    styleType: {
-      type: String,
-      default: AppButtonStyleTypes.Primary,
-    },
-    click: {
-      type: Function,
-    },
-  },
 };
 </script>
 
