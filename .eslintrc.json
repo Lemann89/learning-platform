@@ -5,7 +5,8 @@
   },
   "extends": [
     "eslint:recommended",
-    "plugin:vue/vue3-recommended"
+    "plugin:vue/vue3-recommended",
+    "@vue/eslint-config-typescript"
   ],
   "parser": "vue-eslint-parser",
   "rules": {
@@ -28,5 +29,6 @@
         "ObjectExpression": "off"
       }
     ]
-  }
+  },
+  "ignorePatterns": [".idea"]
 }

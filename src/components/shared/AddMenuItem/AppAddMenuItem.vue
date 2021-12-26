@@ -3,14 +3,14 @@
     class="add"
     :class="styleType"
 >
-    <div class="add__icon">
+    <span class="add__icon">
         <AppIconContainer
             width="19"
             height="19"
         >
             <IconAdd />
         </AppIconContainer>
-    </div>
+    </span>
     <span class="add__text"> {{ text }} </span>
 </button>
 </template>

@@ -54,12 +54,13 @@ import { useResult } from "@vue/apollo-composable";
 import { useGetCourseSidebarQuery } from "../../gql/courses/composables";
 import { useRoute } from "vue-router";
 import AppLoader from "../../components/shared/AppLoader";
+import { showSidebar } from "../../components/sidebar/sidebarProvider";
+import AddModuleSidebar from "../../components/sidebar/AddModuleSidebar";
 
 export default {
     name: "EditorSidebar",
     components: { AppLoader, AppAddMenuItem, ModuleDropdown },
     setup() {
-
       const $route = useRoute()
       const courseId = +$route.params.courseId
 
@@ -67,7 +68,7 @@ export default {
       const course = useResult(result, null);
 
       const onAddModuleClick = () => {
-        console.log('a')
+        showSidebar(AddModuleSidebar)
       }
 
       return {
